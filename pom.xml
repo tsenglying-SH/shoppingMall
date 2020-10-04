@@ -6,6 +6,10 @@
 	<groupId>com.shoppingmall.parent</groupId>
 	<artifactId>shoppingmall</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
+	<modules>
+		<module>sp-registry</module>
+		<module>sp-gateway</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>shoppingmall</name>
@@ -75,10 +79,10 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.apache.commmons</groupId>
 			<artifactId>commons-lang3</artifactId>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
