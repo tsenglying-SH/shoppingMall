@@ -9,7 +9,9 @@
 	<modules>
 		<module>sp-registry</module>
 		<module>sp-gateway</module>
-	</modules>
+		<module>sp-item</module>
+        <module>sp-common</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>shoppingmall</name>
