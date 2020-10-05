@@ -1,4 +1,4 @@
-package com.shoppingmall.utils;
+package com.shoppingmall.common.utils;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;

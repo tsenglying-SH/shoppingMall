@@ -13,8 +13,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  **/
 @SpringBootApplication
 @EnableDiscoveryClient/*注册到eureka中*/
-public class SpItemService {
+public class SpItemApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpItemService.class);
+        SpringApplication.run(SpItemApplication.class);
     }
 }
