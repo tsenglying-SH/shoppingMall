@@ -22,3 +22,7 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
     instance-id: ${spring.application.name}:${server.port}
+mybatis:
+  configuration:
+  #打印sql语句的日志信息
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

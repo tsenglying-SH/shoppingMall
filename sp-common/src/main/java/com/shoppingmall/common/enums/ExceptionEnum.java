@@ -13,8 +13,9 @@ public enum ExceptionEnum {
 
     //枚举必须定义在前面，并且参数顺序与后面参数顺序一致
     PRICE_CANNOT_BE_BULL(400,"价格不能为空"),
-    CATGORY_NOT_FOUND(404,"商品分类没查到")
-    ;
+    CATGORY_NOT_FOUND(404,"商品分类没查到"),
+    BRAND_NOT_EXIST(404,"品牌不存在"),
+    BRAND_SAVE_ERROR(500,"保存品牌失败！" );
     private int code;
     private String msg;
 
