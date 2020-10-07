@@ -3,6 +3,7 @@ package com.shoppingmall;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * @ClassName SpItemService
@@ -13,6 +14,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  **/
 @SpringBootApplication
 @EnableDiscoveryClient/*注册到eureka中*/
+@MapperScan("com.shoppingmall.item.mapper")
 public class SpItemApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpItemApplication.class);

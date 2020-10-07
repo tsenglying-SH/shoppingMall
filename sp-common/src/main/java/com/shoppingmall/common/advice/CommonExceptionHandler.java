@@ -3,7 +3,6 @@ package com.shoppingmall.common.advice;
 import com.shoppingmall.common.enums.ExceptionEnum;
 import com.shoppingmall.common.exception.SpException;
 import com.shoppingmall.common.vo.ExceptionResult;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -20,7 +19,7 @@ public class CommonExceptionHandler {
 
     //拦截runtiomeException异常
     @ExceptionHandler(SpException.class)
-    public ResponseEntity<ExceptionResult> handleException(SpException e){
+    public ResponseEntity<ExceptionResult> handleException(SpException e) {
         ExceptionEnum em = e.getExceptionEnum();
         return ResponseEntity.status(em.getCode())
                 .body(new ExceptionResult(em));
