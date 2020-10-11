@@ -11,6 +11,7 @@
 		<module>sp-gateway</module>
 		<module>sp-item</module>
         <module>sp-common</module>
+        <module>sp-upload</module>
     </modules>
 	<packaging>pom</packaging>
 
